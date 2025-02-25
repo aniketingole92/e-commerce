@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our amazing collection of products.">
-    <meta name="keywords" content="e-commerce, online shopping, products">
+    <meta name="description" content="Login to access our amazing e-commerce store.">
+    <meta name="keywords" content="login, e-commerce, online shopping">
     <meta name="author" content="Your Name">
-    <title>Home - E-Commerce Store</title>
+    <title>Login - E-Commerce Store</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,118 +14,59 @@
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .product-card {
+        .login-container {
             background-color: #fff;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 300px;
         }
 
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        .login-container h2 {
+            margin-bottom: 20px;
         }
 
-        .product-card img {
+        .login-container input {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        .product-card h3 {
-            margin: 15px 0 10px;
-            font-size: 1.2rem;
-        }
-
-        .product-card p {
-            color: #666;
-        }
-
-        .product-card button {
-            padding: 10px 20px;
+        .login-container a {
+            display: block;
+            width: 100%;
+            padding: 10px;
             background-color: #4CAF50;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-        }
-
-        .product-card button:hover {
-            background-color: #45a049;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            text-decoration: none;
         }
 
-        footer p {
-            margin: 0;
+        .login-container a:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>E-Commerce Store</h1>
-    </header>
-
-    <!-- Product Grid -->
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="https://via.placeholder.com/250" alt="Product 1">
-            <h3>Product 1</h3>
-            <p>$19.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/250" alt="Product 2">
-            <h3>Product 2</h3>
-            <p>$29.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/250" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$39.99</p>
-            <button>Add to Cart</button>
-        </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <!-- Anchor Tag for Login Button -->
+        <a href="/e-commerce/login-page.html">Login</a>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 E-Commerce Store. All rights reserved.</p>
-    </footer>
 </body>
 </html>
